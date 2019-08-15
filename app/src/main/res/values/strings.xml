@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Mamang GOJEK</string>
+    <string name="gofood">Pesan Makanan</string>
+    <string name="result">Detail Pesanan</string>
 </resources>

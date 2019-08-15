@@ -18,8 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GoFoodActivity" />
-        <activity android:name=".ResultGoFoodActivity"></activity>
+        <activity android:name=".GoFoodActivity"
+            android:label="@string/gofood"/>
+        <activity android:name=".ResultGoFoodActivity"
+            android:label="@string/result"></activity>
     </application>
 
 </manifest>
