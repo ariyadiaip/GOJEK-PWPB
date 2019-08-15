@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoFoodActivity">
+
+    <ImageView
+        android:id="@+id/goFood"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/menu_gofood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/tvOrderFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Food"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/goFood"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <GridLayout
+        android:id="@+id/glayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:layout_below="@+id/tvOrderFood"
+        android:layout_marginLeft="13dp">
+        <TextView
+            android:id="@+id/tvnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="20sp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/tvOrderFood"/>
+        <EditText
+            android:id="@+id/edtNama"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvnama"
+            android:hint="Isi Nama"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textSize="20sp"
+            android:layout_marginTop="7dp"
+            android:layout_below="@+id/tvnama"/>
+        <EditText
+            android:id="@+id/edtAlamat"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvnama"
+            android:hint="Isi Alamat"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/tvPesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesan"
+            android:layout_marginTop="7dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/tvnama"/>
+        <EditText
+            android:id="@+id/edtPesan"
+            android:layout_width="240dp"
+            android:hint="Isi Pesanan"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvPesan"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@color/colorPrimary"
+        android:text="ORDER"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/glayout"/>
+
+</RelativeLayout>
